@@ -1,0 +1,11 @@
+/* .homeContainer {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+} */
+
+.poster {
+  background-image: url("../assets/poster.jpg");
+  width: 100vw;
+  height: 300px;
+}

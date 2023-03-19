@@ -1,0 +1,25 @@
+.accountContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.model {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  padding: 50px;
+}
+
+.profile {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

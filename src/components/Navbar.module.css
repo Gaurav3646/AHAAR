@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: rgb(222, 157, 6);
+  color: aliceblue;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.253);
+}
+
+.pending {
+  background-color: aliceblue;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.profile {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+
+.navbar h2 {
+  padding: 5px;
+  color: aliceblue;
+}
