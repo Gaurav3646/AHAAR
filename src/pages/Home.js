@@ -44,6 +44,7 @@ const Home = () => {
             category={item.type}
             quantity={item.countP}
             expiry={item.date}
+            id={item.id}
           />
         ))}
       </div>

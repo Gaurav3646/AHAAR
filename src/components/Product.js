@@ -2,10 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Product.module.css";
 import Button from "../components/Button";
-
-const Product = ({ image, title, category, quantity, expiry }) => {
+import { useNavigate } from "react-router-dom";
+const Product = ({ image, title, category, quantity, expiry, id }) => {
+  const navigate = useNavigate();
+  const onClickHandler = () => {
+    console.log("hello");
+    navigate(`/products/${id}`);
+  };
   return (
-    <div className={styles.product}>
+    <div className={styles.product} onClick={onClickHandler}>
       <img src={image} alt={title} className={styles.productImage} />
 
       <div className={styles.productDetails}>

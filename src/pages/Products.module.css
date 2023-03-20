@@ -1,0 +1,44 @@
+.productsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.productItem {
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.productImage {
+  height: 200px;
+  background-color: #eee;
+}
+
+.productInfo {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.productName {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.productPrice {
+  margin: 0;
+}
+
+.addToCartButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addToCartButton:hover {
+  background-color: #0069d9;
+}

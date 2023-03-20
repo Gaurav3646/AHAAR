@@ -1,0 +1,65 @@
+.productDetails {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.model {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  display: grid;
+  gap: 30px;
+}
+.productImage {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.productCategory,
+.productQuantity,
+.productExpiry {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.productCategory:before {
+  content: "Category: ";
+  font-weight: bold;
+}
+
+.productQuantity:before {
+  content: "Quantity: ";
+  font-weight: bold;
+}
+
+.productExpiry:before {
+  content: "Expires: ";
+  font-weight: bold;
+}
+.productAddress:before {
+  content: "Address: ";
+  font-weight: bold;
+}
+.model:hover .productImage {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.productInfo {
+  display: grid;
+  gap: 5px;
+}

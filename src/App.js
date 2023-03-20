@@ -9,6 +9,9 @@ import Signin from "./pages/Signin";
 import "./index.css";
 import ImageScroller from "./components/ImageSlider";
 import Donate from "./pages/Donate";
+import Product from "./components/Product";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDeatils";
 function App() {
   return (
     <div className="appContainer">
@@ -17,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/products" element={<Products />} />
           <Route
             path="/account"
             element={
@@ -25,6 +29,7 @@ function App() {
               </Protected>
             }
           />
+          <Route path="/products/:productId" element={<ProductDetails />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
       </AuthContextProvider>

@@ -56,7 +56,8 @@ const InputForm = () => {
       <div className={classes.formpage}>
         <form onSubmit={submitHandler}>
           <label>
-            People you can serve:
+            <h3>People you can serve:</h3>
+            <br />
             <input
               type="number"
               name="name"
@@ -70,7 +71,8 @@ const InputForm = () => {
           </label>
           <br />
           <label>
-            Your Contact Number:
+            <h3> Your Contact Number:</h3>
+            <br />
             <input
               type="number"
               name="name"
@@ -84,7 +86,8 @@ const InputForm = () => {
           </label>
           <br />
           <label>
-            Description Of Food:
+            <h3> Description Of Food:</h3>
+            <br />
             <input
               type="text"
               name="name"
@@ -98,7 +101,8 @@ const InputForm = () => {
           </label>
           <br />
           <label>
-            Your Address:
+            <h3>Your Address:</h3>
+            <br />
             <input
               type="text"
               name="name"
@@ -112,9 +116,8 @@ const InputForm = () => {
           </label>
           <br />
           <label>
-            Available Upto:
+            <h3>Available Upto:</h3>
             <br />
-            <CalendarIcon />
             <input
               type="date"
               name="name"
@@ -127,7 +130,9 @@ const InputForm = () => {
             />
           </label>
           <br />
-          <lable>Food Category:</lable>
+          <lable>
+            <h3>Food Category:</h3>
+          </lable>
           <br />
           <div>
             <input
@@ -144,7 +149,8 @@ const InputForm = () => {
           </div>
           <br />
           <label>
-            Upload Image:
+            <h3> Upload Image:</h3>
+            <br />
             <input
               type="file"
               id="img"
