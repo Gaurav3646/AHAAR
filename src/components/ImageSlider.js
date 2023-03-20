@@ -28,7 +28,9 @@ const ImageSlider = ({ images }) => {
         }
       </div>
       <div className={styles.sliderControls}>
-        <button onClick={goToPreviousImage}>&lt;</button>
+        <button onClick={goToPreviousImage} className={styles.arrowButton}>
+          &lt;
+        </button>
         <div className={styles.sliderBullets}>
           {images.map((_, index) => (
             <span
@@ -40,7 +42,9 @@ const ImageSlider = ({ images }) => {
             />
           ))}
         </div>
-        <button onClick={goToNextImage}>&gt;</button>
+        <button onClick={goToNextImage} className={styles.arrowButton}>
+          &gt;
+        </button>
       </div>
     </div>
   );

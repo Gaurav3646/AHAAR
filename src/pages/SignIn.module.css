@@ -1,18 +1,30 @@
 .signInContainer {
   display: grid;
+
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.modelcontainer {
+  height: 450px;
+  width: 900px;
+  border-radius: 10px;
+  background-image: url("C:\Users\Mi Laptop\Desktop\PwSkills_hackathon_jaipur_project\freeFood\src\assets\poster1.jpg");
+}
 
 .model {
+  background-color: white;
+  height: 250px;
+  width: 250px;
   display: grid;
   grid-template-rows: auto auto auto;
   gap: 20px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.514);
   padding: 50px;
+  margin-left: 500px;
+  margin-top: 55px;
 }
 
 .model h1 {
@@ -25,8 +37,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 200px;
+  /* width: 400px;
+  height: 200px; */
 }
 .signInButton {
   border-radius: 10px;

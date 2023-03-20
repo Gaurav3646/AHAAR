@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  padding: 5px 30px;
+  padding: 5px 30px 5px 100px;
   background-color: rgb(222, 157, 6);
   color: aliceblue;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.253);
@@ -15,8 +15,8 @@
 }
 .profile {
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -29,18 +29,19 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
   gap: 20px;
   overflow: hidden;
 }
 
 .navbar h2 {
-  padding: 5px;
+  padding-top: 5px;
   color: aliceblue;
 }
 
 .logo {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 5px;
+  position: absolute;
+  z-index: 5;
+  left: 20px;
+  top: -15px;
 }

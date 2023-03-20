@@ -68,3 +68,7 @@
 .sliderControls button:hover {
   background-color: #555;
 }
+
+.arrowButton {
+  border-radius: 50%;
+}

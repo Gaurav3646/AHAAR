@@ -7,6 +7,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
 import { UserAuth } from "../context/AuthContext";
+import Button from "../components/Button";
 
 const InputForm = () => {
   const { user } = UserAuth();
@@ -53,6 +54,10 @@ const InputForm = () => {
   };
   return (
     <div className={classes.mainpage}>
+      <div>
+        <h1>Kindly upload the AHAAR </h1>
+        <p>"LET US STRIVE TO BE BETTER PEOPLE AND NOT WASTE OUR FOOD"</p>
+      </div>
       <div className={classes.formpage}>
         <form onSubmit={submitHandler}>
           <div>
@@ -106,6 +111,7 @@ const InputForm = () => {
             <input
               type="text"
               name="name"
+              placeholder="Address"
               onChange={(event) =>
                 setProductDetails((prev) => ({
                   ...prev,
@@ -131,6 +137,7 @@ const InputForm = () => {
               type="text"
               id="horns"
               name="scales"
+              placeholder="Category"
               onChange={(event) =>
                 setProductDetails((prev) => ({
                   ...prev,
@@ -140,7 +147,7 @@ const InputForm = () => {
             />
           </div>
 
-          <input type="submit" value="Submit" />
+          <Button text="Submit" type="submit" />
         </form>
       </div>
     </div>

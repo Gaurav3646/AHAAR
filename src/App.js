@@ -11,14 +11,24 @@ import ImageScroller from "./components/ImageSlider";
 import Donate from "./pages/Donate";
 import Product from "./components/Product";
 import Products from "./pages/Products";
+import About from "./pages/About";
+import Orders from "./pages/Orders";
 import ProductDetails from "./pages/ProductDeatils";
 function App() {
+  const user = UserAuth();
   return (
     <div className="appContainer">
       <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Protected>
+                <Home />
+              </Protected>
+            }
+          />
           <Route path="/signin" element={<Signin />} />
           <Route path="/products" element={<Products />} />
           <Route
@@ -30,7 +40,23 @@ function App() {
             }
           />
           <Route path="/products/:productId" element={<ProductDetails />} />
-          <Route path="/donate" element={<Donate />} />
+          <Route
+            path="/donate"
+            element={
+              <Protected>
+                <Donate />
+              </Protected>
+            }
+          />
+          <Route
+            path="/Orders"
+            element={
+              <Protected>
+                <Orders />
+              </Protected>
+            }
+          />
+          <Route path="/About" element={<About />} />
         </Routes>
       </AuthContextProvider>
     </div>

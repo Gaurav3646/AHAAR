@@ -36,9 +36,6 @@ const Home = () => {
   return (
     <div className={classes.homeContainer}>
       <ImageScroller images={images} />
-      <div>
-        <h2></h2>
-      </div>
       <div className={classes.products}>
         {products.map((item) => (
           <Product

@@ -1,13 +1,16 @@
 .customButton {
+  height: max-content;
   display: inline-block;
   background-color: #844a03;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   border: none;
+  margin: auto;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 13px 20px;
   cursor: pointer;
+  width: 100%;
 }
 
 .customButton:hover {

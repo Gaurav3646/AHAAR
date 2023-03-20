@@ -12,6 +12,7 @@ const Navbar = () => {
   const handleSignOut = async () => {
     try {
       await logOut();
+      navigate("/signin");
     } catch (error) {
       console.log(error);
     }
@@ -19,9 +20,9 @@ const Navbar = () => {
 
   return (
     <div className={classes.header}>
-      <span className={classes.logo}>
-        <img src={logo} alt="logo" width="50px" />
-        <h1>FoodCycle</h1>
+      <img src={logo} className={classes.logo} alt="logo" width="110px" />
+      <span>
+        <h1>AHAAR</h1>
       </span>
       <div className={classes.navbar}>
         <NavLink
@@ -53,9 +54,15 @@ const Navbar = () => {
           style={({ isActive }) => ({
             borderBottom: isActive ? "5px solid #fff" : "",
           })}
-        />
-        <h2>Orders</h2>
-        <NavLink to="/about">
+        >
+          <h2>Orders</h2>
+        </NavLink>
+        <NavLink
+          to="/about"
+          style={({ isActive }) => ({
+            borderBottom: isActive ? "5px solid #fff" : "",
+          })}
+        >
           <h2>About</h2>
         </NavLink>
         {user?.photoURL ? (
@@ -72,12 +79,7 @@ const Navbar = () => {
         {user?.displayName ? (
           <Button text="Log out" onClick={handleSignOut} />
         ) : (
-          <NavLink
-            to="/signin"
-            style={({ isActive }) => ({
-              borderBottom: isActive ? "5px solid #fff" : "",
-            })}
-          >
+          <NavLink to="/signin">
             <Button text="Sign In" />
           </NavLink>
         )}
