@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import styles from "./ProductDetails.module.css";
 import { db } from "../firebase";
-import { doc, getDocFromCache, getDoc } from "firebase/firestore";
+import { deleteDoc } from "firebase/firestore";
+import {
+  doc,
+  getDocFromCache,
+  getDoc,
+  addDoc,
+  collection,
+} from "firebase/firestore";
 import Button from "../components/Button";
 import map from "../assets/map.png";
+import { UserAuth } from "../context/AuthContext";
 const ProductDetails = () => {
+  const { user } = UserAuth();
+  const navigate = useNavigate();
   const { productId } = useParams();
   //////
   console.log(productId);
@@ -26,6 +36,22 @@ const ProductDetails = () => {
     };
     res();
   }, []);
+
+  const handleOrder = async () => {
+    try {
+      // Add a new document with a generated id.
+      const docRef = await addDoc(collection(db, "Orders"), {
+        ...product,
+        receiver: user.uid,
+      });
+      //     await setDoc(doc(db, "products"), {
+      await deleteDoc(doc(db, "Products", productId));
+      navigate("/orders");
+      //     });
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   if (!product) {
     return <p>Product not found</p>;
@@ -55,7 +81,7 @@ const ProductDetails = () => {
             </a>
           </div>
         </div>
-        <Button text="Confirm Order" />
+        <Button text="Confirm Order" onClick={handleOrder} />
       </div>
     </div>
   );

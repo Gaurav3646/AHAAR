@@ -55,12 +55,20 @@ const InputForm = () => {
     <div className={classes.mainpage}>
       <div className={classes.formpage}>
         <form onSubmit={submitHandler}>
-          <label>
-            <h3>People you can serve:</h3>
-            <br />
+          <div>
+            <input
+              type="file"
+              id="img"
+              name="img"
+              accept="image/*"
+              onChange={(event) => setImage(event.target.files[0])}
+            />
+          </div>
+          <div>
             <input
               type="number"
               name="name"
+              placeholder="Quantity"
               onChange={(event) =>
                 setProductDetails((prev) => ({
                   ...prev,
@@ -68,14 +76,11 @@ const InputForm = () => {
                 }))
               }
             />
-          </label>
-          <br />
-          <label>
-            <h3> Your Contact Number:</h3>
-            <br />
             <input
               type="number"
               name="name"
+              max="10"
+              placeholder="6392184061"
               onChange={(event) =>
                 setProductDetails((prev) => ({
                   ...prev,
@@ -83,14 +88,12 @@ const InputForm = () => {
                 }))
               }
             />
-          </label>
-          <br />
-          <label>
-            <h3> Description Of Food:</h3>
-            <br />
+          </div>
+          <div>
             <input
               type="text"
               name="name"
+              placeholder="Description"
               onChange={(event) =>
                 setProductDetails((prev) => ({
                   ...prev,
@@ -98,11 +101,8 @@ const InputForm = () => {
                 }))
               }
             />
-          </label>
-          <br />
-          <label>
-            <h3>Your Address:</h3>
-            <br />
+          </div>
+          <div>
             <input
               type="text"
               name="name"
@@ -113,11 +113,8 @@ const InputForm = () => {
                 }))
               }
             />
-          </label>
-          <br />
-          <label>
-            <h3>Available Upto:</h3>
-            <br />
+          </div>
+          <div>
             <input
               type="date"
               name="name"
@@ -128,12 +125,7 @@ const InputForm = () => {
                 }))
               }
             />
-          </label>
-          <br />
-          <lable>
-            <h3>Food Category:</h3>
-          </lable>
-          <br />
+          </div>
           <div>
             <input
               type="text"
@@ -147,19 +139,7 @@ const InputForm = () => {
               }
             />
           </div>
-          <br />
-          <label>
-            <h3> Upload Image:</h3>
-            <br />
-            <input
-              type="file"
-              id="img"
-              name="img"
-              accept="image/*"
-              onChange={(event) => setImage(event.target.files[0])}
-            ></input>
-          </label>
-          <br />
+
           <input type="submit" value="Submit" />
         </form>
       </div>

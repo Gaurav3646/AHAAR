@@ -36,6 +36,9 @@ const Home = () => {
   return (
     <div className={classes.homeContainer}>
       <ImageScroller images={images} />
+      <div>
+        <h2></h2>
+      </div>
       <div className={classes.products}>
         {products.map((item) => (
           <Product
@@ -45,6 +48,7 @@ const Home = () => {
             quantity={item.countP}
             expiry={item.date}
             id={item.id}
+            text="Detail Description"
           />
         ))}
       </div>
