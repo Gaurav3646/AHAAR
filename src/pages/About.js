@@ -9,7 +9,7 @@ return (
     <div className={classes.main}>
         <h2>OUR AIM</h2>
         <div className={classes.desc}>
-            <p><b>A GLOBAL CHALLENGE</b><br></br>
+            <p><br></br>
 Reducing this food loss and waste is a “triple win.” First, farmers, companies and households can save money by reducing waste. Second, wasting less means feeding more. Finally, these reductions alleviate pressure on climate, water and land resources.</p>
         </div>
         <div>
@@ -19,7 +19,7 @@ Reducing this food loss and waste is a “triple win.” First, farmers, compani
                 <li>Give credits to the people who donate.</li>
                 <li>Connecting food doners,with hunger relief organizations.</li>
                 <li>Waste food to nearby animals by collecting expiring data of food.</li>
-                <li>Prevents wastage of food by feeding the extra food to the needy.</li>
+                
             </ul>
         </div>
         <h2>Our Team</h2>
