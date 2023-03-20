@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import classes from "../components/Navbar.module.css";
 import Button from "./Button";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const { user, logOut } = UserAuth();
 
   const handleSignOut = async () => {
@@ -23,13 +24,16 @@ const Navbar = () => {
           <h2>Home</h2>
         </NavLink>
         <NavLink to="/products">
-          <h2>Products</h2>
+          <h2>Consumables</h2>
         </NavLink>
         <NavLink to="/donate">
           <h2>Donate</h2>
         </NavLink>
         {user?.photoURL ? (
-          <span className={classes.profile}>
+          <span
+            className={classes.profile}
+            onClick={() => navigate("/Account")}
+          >
             <img src={user?.photoURL} alt="Profile picture" />
           </span>
         ) : (

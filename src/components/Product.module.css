@@ -10,6 +10,7 @@
   margin: 10px;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
 }
 
 .product:hover {

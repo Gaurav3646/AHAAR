@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import styles from "./ProductDetails.module.css";
 import { db } from "../firebase";
 import { doc, getDocFromCache, getDoc } from "firebase/firestore";
+import Button from "../components/Button";
+import map from "../assets/map.png";
 const ProductDetails = () => {
   const { productId } = useParams();
   //////
@@ -44,7 +46,16 @@ const ProductDetails = () => {
           <p className={styles.productQuantity}>{product?.countP}</p>
           <p className={styles.productExpiry}>{product.date}</p>
           <p className={styles.productAddress}>{product.address}</p>
+          <div className={styles.address}>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${product.address}`}
+              target="blank"
+            >
+              <img src={map} alt="address" width="50px" />
+            </a>
+          </div>
         </div>
+        <Button text="Confirm Order" />
       </div>
     </div>
   );
