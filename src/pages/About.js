@@ -26,17 +26,20 @@ const About = () => {
           <img src={Dip2} className={classes.img1}></img>
           <h2>Dipendra Raghav</h2>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://www.instagram.com/dipendra.cpp/" target="blank">
               <img src={insta} width="50px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://github.com/Dipendra-Raghav" target="blank">
               <img src={git} width="49px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a
+              href="https://www.linkedin.com/in/dipendra-raghav/"
+              target="blank"
+            >
               <img src={link} width="53px" />
             </a>
           </span>
@@ -45,17 +48,20 @@ const About = () => {
           <img src={faz} className={classes.img1}></img>
           <h2>Fazal Ahmad</h2>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="http://instagram.com/fazal__sidd" target="blank">
               <img src={insta} width="50px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://github.com/fazalsidd" target="blank">
               <img src={git} width="49px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a
+              href="https://www.linkedin.com/in/fazal-ahmad-8091b6223/"
+              target="blank"
+            >
               <img src={link} width="53px" />
             </a>
           </span>
@@ -64,17 +70,20 @@ const About = () => {
           <img src={gau} className={classes.img1}></img>
           <h2>Gaurav Verma</h2>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://www.instagram.com/gvverma1/" target="blank">
               <img src={insta} width="50px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://github.com/Gaurav3646" target="blank">
               <img src={git} width="49px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a
+              href=" https://in.linkedin.com/in/gaurav-verma-866057221"
+              target="blank"
+            >
               <img src={link} width="53px" />
             </a>
           </span>
@@ -83,17 +92,20 @@ const About = () => {
           <img src={hari} className={classes.img1}></img>
           <h2>Harom Singh Rajput</h2>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://instagram.com/hariomsingh_12" target="blank">
               <img src={insta} width="50px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a href="https://github.com/rajhariomsingh" target="blank">
               <img src={git} width="49px" />
             </a>
           </span>
           <span className={classes.logo}>
-            <a href="" target="blank">
+            <a
+              href="https://www.linkedin.com/in/hariom-singh-3693841ba"
+              target="blank"
+            >
               <img src={link} width="53px" />
             </a>
           </span>

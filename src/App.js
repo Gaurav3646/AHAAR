@@ -30,7 +30,14 @@ function App() {
             }
           />
           <Route path="/signin" element={<Signin />} />
-          <Route path="/products" element={<Products />} />
+          <Route
+            path="/products"
+            element={
+              <Protected>
+                <Products />
+              </Protected>
+            }
+          />
           <Route
             path="/account"
             element={

@@ -21,7 +21,7 @@ const Signin = () => {
     if (user != null) {
       navigate("/");
     }
-  }, [user]);
+  }, [user, googleSignIn]);
 
   return (
     <div className={classes.signInContainer}>

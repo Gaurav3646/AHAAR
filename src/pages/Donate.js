@@ -7,8 +7,10 @@ import { doc, setDoc } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
 import { UserAuth } from "../context/AuthContext";
 import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
 
 const InputForm = () => {
+  const navigate = useNavigate();
   const { user } = UserAuth();
   const [productDetails, setProductDetails] = useState({
     countP: 0,
@@ -41,6 +43,7 @@ const InputForm = () => {
             });
             //     await setDoc(doc(db, "products"), {
 
+            navigate("/products");
             //     });
           } catch (err) {
             console.log(err);
@@ -81,9 +84,8 @@ const InputForm = () => {
               }
             />
             <input
-              type="number"
+              type="text"
               name="name"
-              max="10"
               placeholder="6392184061"
               onChange={(event) =>
                 setProductDetails((prev) => ({
