@@ -29,6 +29,9 @@ const Navbar = () => {
         <NavLink to="/donate">
           <h2>Donate</h2>
         </NavLink>
+        <NavLink to="/about">
+          <h2>About</h2>
+        </NavLink>
         {user?.photoURL ? (
           <span
             className={classes.profile}

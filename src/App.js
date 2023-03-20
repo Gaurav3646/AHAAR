@@ -12,6 +12,7 @@ import Donate from "./pages/Donate";
 import Product from "./components/Product";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDeatils";
+import About from "./pages/About"
 function App() {
   return (
     <div className="appContainer">
@@ -31,6 +32,7 @@ function App() {
           />
           <Route path="/products/:productId" element={<ProductDetails />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </AuthContextProvider>
     </div>
