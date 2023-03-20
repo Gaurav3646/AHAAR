@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CalendarIcon, TimeIcon } from "@chakra-ui/icons";
 import classes from "../pages/Donate.module.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, storage, db } from "../firebase";
