@@ -7,7 +7,8 @@ import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 import "./index.css";
-
+import ImageScroller from "./components/ImageSlider";
+import Donate from "./pages/Donate";
 function App() {
   return (
     <div className="appContainer">
@@ -24,6 +25,7 @@ function App() {
               </Protected>
             }
           />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
       </AuthContextProvider>
     </div>

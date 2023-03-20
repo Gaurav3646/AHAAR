@@ -19,10 +19,10 @@ const Navbar = () => {
     <div className={classes.header}>
       <h1>FoodCycle</h1>
       <div className={classes.navbar}>
-        <NavLink to="/signin">
+        <NavLink to="/">
           <h2>Home</h2>
         </NavLink>
-        <NavLink to="/signin">
+        <NavLink to="/donate">
           <h2>Donate</h2>
         </NavLink>
         {user?.photoURL ? (

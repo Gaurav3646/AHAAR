@@ -3,9 +3,8 @@
   justify-content: center;
   gap: 20px;
 } */
-
-.poster {
-  background-image: url("../assets/poster.jpg");
-  width: 100vw;
-  height: 300px;
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
 }

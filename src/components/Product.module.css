@@ -1,0 +1,49 @@
+.product {
+  display: grid;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 300px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product:hover {
+  background-color: #f5f5f5;
+}
+
+.productImage {
+  width: 200px;
+  height: 100px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.productCategory {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.productQuantity {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.productExpiry {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}

@@ -1,0 +1,63 @@
+.mainpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formpage {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.category {
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+form input[type="number"],
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="checkbox"],
+form input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+form label[for="scales"],
+form label[for="horns"] {
+  font-size: 16px;
+  color: #555;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
