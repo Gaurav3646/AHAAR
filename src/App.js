@@ -12,7 +12,6 @@ import Donate from "./pages/Donate";
 import Product from "./components/Product";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDeatils";
-import Orders from "./pages/Orders";
 function App() {
   return (
     <div className="appContainer">
@@ -32,7 +31,6 @@ function App() {
           />
           <Route path="/products/:productId" element={<ProductDetails />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="/Orders" element={<Orders />} />
         </Routes>
       </AuthContextProvider>
     </div>

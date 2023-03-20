@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 5px 30px;
   background-color: rgb(222, 157, 6);
   color: aliceblue;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.253);
@@ -29,8 +29,9 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 30px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  gap: 20px;
+  overflow: hidden;
 }
 
 .navbar h2 {

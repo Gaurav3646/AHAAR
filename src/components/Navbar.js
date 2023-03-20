@@ -53,8 +53,10 @@ const Navbar = () => {
           style={({ isActive }) => ({
             borderBottom: isActive ? "5px solid #fff" : "",
           })}
-        >
-          <h2>Orders</h2>
+        />
+        <h2>Orders</h2>
+        <NavLink to="/about">
+          <h2>About</h2>
         </NavLink>
         {user?.photoURL ? (
           <span
