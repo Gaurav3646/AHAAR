@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Ahaar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ahaar is a zero food waste system that connects food donors (restaurants or individuals) to needy persons or organizations, providing them with food at a discounted price or for free. The app helps reduce food wastage while also helping those in need.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Connects food donors to needy persons or organizations
+- Provides food at a discounted price or for free
+- Restaurants receive credit points based on their donations
+- Credit points can be used by the government to provide incentives such as tax deductions
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: `git clone https://github.com/your-username/Ahaar.git`
+2. Install dependencies: `npm install`
+3. Start the app: `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `yarn test`
+1. Sign up as a donor or a needy person/organization
+2. Browse available food donations
+3. Place an order for food
+4. Receive your order and enjoy your meal!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `yarn build`
+We welcome contributions from everyone. To contribute to Ahaar, please follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Fork the repository
+2. Create a new branch: `git checkout -b new-feature`
+3. Make changes and test thoroughly
+4. Commit your changes: `git commit -am 'Add new feature'`
+5. Push to the branch: `git push origin new-feature`
+6. Create a pull request
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## UI
 
-### `yarn eject`
+![signin](https://user-images.githubusercontent.com/91468455/226523724-f960ba23-05ee-4861-8b18-cb2c7f2d2d30.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![formimage](https://user-images.githubusercontent.com/91468455/226523646-41063677-9277-4d01-aa77-9262de4677ec.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![home image](https://user-images.githubusercontent.com/91468455/226523769-1448c3f7-692a-492f-97d5-f884fda26edd.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![WhatsApp Image 2023-03-21 at 12 47 01 AM](https://user-images.githubusercontent.com/91468455/226523403-dbdbae2b-c6e4-4927-a42e-1c46b826455a.jpeg)
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ahaar is released under the [Team Spartans](https://ahaar.vercel.app/).
