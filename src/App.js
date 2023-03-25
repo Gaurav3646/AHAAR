@@ -12,6 +12,7 @@ import Donate from "./pages/Donate";
 import Product from "./components/Product";
 import Products from "./pages/Products";
 import About from "./pages/About";
+import Search from "./pages/Search";
 import Orders from "./pages/Orders";
 import ProductDetails from "./pages/ProductDeatils";
 function App() {
@@ -64,6 +65,7 @@ function App() {
             }
           />
           <Route path="/About" element={<About />} />
+          <Route path="/Search" element={<Search />} />
         </Routes>
       </AuthContextProvider>
     </div>
