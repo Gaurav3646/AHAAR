@@ -90,7 +90,7 @@ const About = () => {
         </span>
         <span className={classes.profileContainer}>
           <img src={hari} className={classes.img1}></img>
-          <h2>Harom Singh Rajput</h2>
+          <h2>Hariom Singh Rajput</h2>
           <span className={classes.logo}>
             <a href="https://instagram.com/hariomsingh_12" target="blank">
               <img src={insta} width="50px" />
