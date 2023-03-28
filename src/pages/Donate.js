@@ -56,8 +56,8 @@ const InputForm = () => {
   };
   return (
     <div className={classes.mainpage}>
-      <div>
-        <h1>Kindly upload the AHAAR </h1>
+      <div className={classes.heading}>
+        <h1 >Kindly upload the AHAAR </h1>
         <p>"LET US STRIVE TO BE BETTER PEOPLE AND NOT WASTE OUR FOOD"</p>
       </div>
       <div className={classes.formpage}>
