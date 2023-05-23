@@ -2,6 +2,8 @@
 
 Ahaar is a zero food waste system that connects food donors (restaurants or individuals) to needy persons or organizations, providing them with food at a discounted price or for free. The app helps reduce food wastage while also helping those in need.
 
+### - [Website Link](https://ahaar.vercel.app/)
+
 ## Features
 
 - Connects food donors to needy persons or organizations
